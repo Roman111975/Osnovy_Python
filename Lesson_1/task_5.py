@@ -7,3 +7,21 @@
 # вычислите рентабельность выручки (соотношение прибыли к выручке).
 # Далее запросите численность сотрудников фирмы и определите прибыль
 # фирмы в расчете на одного сотрудника.
+revenue = float(input("Введите значение выручки "))
+costs = float(input("Введите значение издержек "))
+if revenue > costs:
+    profit = revenue - costs
+    print("Прибыль = ", profit)
+    profitability = profit / costs
+    print(f"Рентабельность выручки ={profitability:.2}")
+    size = int(input("Введите численность сотрудников фирмы "))
+    profit = profit / size
+    print("Прибыль фирмы в расчете на одного сотрудника = ", profit)
+elif revenue < costs:
+    print("Фирма работате в убыток")
+else:
+    print("Фирма работает в ноль")
+
+
+
+
